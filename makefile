@@ -1,5 +1,5 @@
 default: sieve.o tester.o
-	gcc -o test sieve.o tester.o
+	gcc -o test sieve.o tester.o -lm
 sieve.o: sieve.c sieve.h
 	gcc -c sieve.c -lm
 tester.o: tester.c sieve.h
